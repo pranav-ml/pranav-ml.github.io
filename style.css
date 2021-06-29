@@ -8,11 +8,13 @@
   font-family: "Ubuntu", sans-serif;
   /* transition: all 0.5s; */
 }
-
+main{
+  padding: 0 15vw;
+}
 /* navbar */
 .logo {
   width: 100px;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 .dec-brackets {
   color: #0a6efd;
@@ -27,7 +29,7 @@ nav {
 }
 .menu {
   margin-right: 5%;
-  width: 50%;
+  width: 70%;
   text-align: right;
 }
 .navbar .menu li {
@@ -65,24 +67,29 @@ nav {
 .sm-icons{
   position: fixed;
   bottom: 0;
-  margin-left: 5%;
-  height: 35vh;
+  margin-left: 2%;
+  height: 30vh;
   background: transparent;
 }
 .sm-icons ul{
   list-style: none;
+  background: transparent;
+}
+.sm-icons li{
+  background: transparent;
 }
 .sm-icons a{
   font-size: 30px;
   padding-bottom: 20px;
   text-decoration: none;
+  background: transparent;
 }
 
 /* home section  */
 #intro {
   display: flex;
   width: 100%;
-  min-height: 85vh;
+  min-height: 70vh;
   margin: auto;
   justify-content: center;
   /* width: 1200px; */
@@ -91,7 +98,9 @@ nav {
 .intro-content {
   padding-top: 5%;
   justify-content: center;
-  width: clamp(400px, 80vw, 800px);
+  height: fit-content;
+  margin: auto;
+  /* width: clamp(400px, 80vw, 800px); */
 }
 .text1 {
   font-size: 25px;
@@ -135,6 +144,8 @@ nav {
   /* width: 100%; */
   min-height: 85vh;
   margin: auto;
+  width:70%;
+  margin-top: 10%;
   justify-content: center;
 }
 
@@ -159,7 +170,7 @@ p.about-me{
 .experience-content{
   padding-top: 5%;
   justify-content: center;
-  width: clamp(400px, 80vw, 800px);
+  /* width: clamp(400px, 80vw, 800px); */
 }
 
 .button-group{
@@ -222,6 +233,7 @@ p.about-me{
   min-height: 85vh;
   margin: auto;
   justify-content: center;
+  width: 70%;
 }
 
 .right-align{
@@ -232,7 +244,7 @@ p.about-me{
 .projects-content{
   padding-top: 5%;
   justify-content: center;
-  width: clamp(400px, 80vw, 800px);
+  /* width: clamp(400px, 80vw, 800px); */
 }
 .project-card{
   width: 75%;
@@ -318,6 +330,8 @@ a.fa-style{
   min-height: 70vh;
   margin: auto;
   justify-content: center;
+  height: fit-content;
+  padding-bottom: 50px;
 }
 
 /* footer section */
@@ -326,12 +340,42 @@ footer{
   background-image: linear-gradient(#060749, #03031a);
 }
 
+.sm-icons-footer{
+  background: transparent;
+  text-align: center;
+  display: none;
+  /* padding-top: 30px; */
+}
+.sm-icons-footer a{
+  font-size: 30px;
+  padding: 0 30px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  background: transparent;
+}
+
 
 /* media responsive query  */
+
+@media (max-width:1200px){
+
+  main{
+    padding: 0 150px;
+  }
+  #about,#experience,#projects{
+    width: 100%;
+  }
+}
+
+
 
 @media (max-width: 840px) {
 
   /* navbar  */
+
+  main{
+    padding: 0 80px;
+  }
 
   .logo {
     margin-left: 0%;
@@ -390,6 +434,14 @@ footer{
   .navbar .menu li a {
     display: inline;
     background-color: #06063d;
+  }
+
+  /* social media icons  */
+  .sm-icons{
+    display: none;
+  }
+  .sm-icons-footer{
+    display:block;
   }
 
   /* about section  */
@@ -468,9 +520,17 @@ footer{
     padding-top: 0;
   }
   
+  
 }
 
-@media (max-width: 620px) {
+@media (max-width: 485px) {
+
+  main{
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 656px) {
   .exp-info{
     bottom: 85px;
   }
