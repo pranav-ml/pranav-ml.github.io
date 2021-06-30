@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>PranavS</title>
 </head>
 <body>
+    
     <nav class="navbar">
         
-        <img class="logo" src="images/logo.png" alt="logo">
-            
-        <ul class="menu">
-            <li><a href="#"><span class="dec-brackets">&lt</span>About<span class="dec-brackets">&gt</span></a></li>
-            <li><a href="#"><span class="dec-brackets">&lt</span>Work<span class="dec-brackets">&gt</span></a></li>
-            <li><a href="#"><span class="dec-brackets">&lt</span>Experience<span class="dec-brackets">&gt</span></a></li>
-            <li><a href="#"><span class="dec-brackets">&lt</span>Contact<span class="dec-brackets">&gt</span></a></li>
-        </ul>
+        <a href="#">
+            <img class="logo" src="images/logo.png" alt="logo">
+        </a>
+        
+        
+        <div class="menu">
+            <ul style="background: none;">
+                <li><a class="menu-bar" href="#about"><span class="dec-brackets">&lt</span>About<span class="dec-brackets">&gt</span></a></li>
+                <li><a class="menu-bar" href="#experience"><span class="dec-brackets">&lt</span>Work<span class="dec-brackets">&gt</span></a></li>
+                <li><a class="menu-bar" href="#projects"><span class="dec-brackets">&lt</span>Experience<span class="dec-brackets">&gt</span></a></li>
+                <li><a class="menu-bar" href="#contact"><span class="dec-brackets">&lt</span>Contact<span class="dec-brackets">&gt</span></a></li>
+            </ul>
+
+        </div>
+        
         <div class="menu-bar">
-            <a href="#"><span class="fas fa-bars"></span></a>
+            <button><span class="fas fa-bars"></span></button>
         </div>
     </nav>
 
     <div class="sm-icons">
         <ul>
-            <li><a href="#" class="fab fa-linkedin-in"></a></li>
-            <li><a href="#" class="fab fa-github"></a></li>
-            <li><a href="#" class="far fa-envelope"></a></li>
+            <li><a href="https://www.linkedin.com/in/pranav-srivatsav-022383175/" class="fab fa-linkedin-in icon"></a></li>
+            <li><a href="https://github.com/pranav882655" class="fab fa-github icon"></a></li>
+            <li><a href="mailto:srivatsavpranav@gmail.com" class="far fa-envelope icon"></a></li>
             <div style="height: 100vh;width: 50%;border-right: blue;border-right-style: solid; background: transparent;"></div>
         </ul>
     </div>
@@ -45,19 +53,31 @@
                 <div class="text2">I'm Pranav.</div>
                 <div class="text3"> A Web Developer.</div>
                 <br>
-                <div class="about-me">I'm a Boston-based software engineer who specializes in building (and occasionally designing) exceptional digital experiences. Currently, I'm an engineer at Upstatement focused on building accessible, human-centered products.
+                <div class="about-me">
+                    <p style="width: 70%; display: inline-block;">
+                        I'm an undergraduate student of computer science with experience working across the full-stack of web developement and some experience in the field of artificial intelligence and machine learning. 
+                        
+
+                    </p>
                 </div>
                 <br>
                 <br>
-                <button class="btn btn-lg btn-outline-primary">Get In Touch</button>
+                <div style="width: max-content; overflow: hidden; display: inline-block;">
+                <button class="button-glass">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    View My Resume</button>
+                </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="about" class="reveal">
             <div class="intro-content blur-filter">
                 <h1 class="section-heading">About Me</h1>
                 <br>
-                <div style="display: inline-block;">
+                <div class="about-me-content">
                     <p class="about-me">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cumque aut doloribus tempora! Reiciendis quo, molestias deserunt ratione placeat eveniet tempore commodi consectetur vel voluptatem sed quas, aliquid ut voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Esse ad magnam qui delectus. Quisquam recusandae voluptatum velit aliquid iusto porro, optio temporibus adipisci quis impedit inventore, tempore possimus aut! Voluptatem. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic fugit doloremque quae accusantium excepturi laboriosam error labore asperiores eaque veniam odio tenetur ut, porro deleniti fugiat officiis animi sunt.
                     </p>
@@ -71,15 +91,15 @@
             </div>
         </section>
 
-        <section id="experience">
-            <div class="experience-content blur-filter">
+        <section id="experience" class="reveal">
+            <div class="experience-content blur-filter" style="height: fit-content; margin: auto;">
                 <h1 class="section-heading">My Experience</h1>
                 <br><br>
-                <div class="button-group">
+                <div class="button-group reveal reveal-right">
                     <button class="toggle-button active-color" id="tab-btn-0">Coding Ninjas</button>
                     <button class="toggle-button" id="tab-btn-1">SRM CDATS</button>
                 </div>
-                <div class="exp-info">
+                <div class="exp-info reveal reveal-left">
                     <div style="display: grid;">
                         <div class="exp-tabs" id="tab0">
                             <h3><span style="color:white">Teaching Assistant and Mentor</span>  @ Coding Ninjas</h3>
@@ -109,15 +129,15 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="reveal">
             <div class="projects-content blur-filter">
                 <h1 class="section-heading">Some Things I've Built</h1>
                     <br><br><br><br>
 
-                    <div class="project-card" style="float: left;">
+                    <div class="project-card reveal reveal-left" style="float: left;">
                         <img src="images/flyver.png" style="width: 100%; grid-area: 1/1/1/1; opacity: 0.2; " alt="">
                         <div class="project-card-content">
-                            <h3 style="color:#01a2ff; padding: 6%; padding-top:10%; padding-bottom: 0;font-weight: bold; background: none;">Flyver</h3>
+                            <h3 style="color:#01a2ff; padding: 6%; padding-top:12%; padding-bottom: 0;font-weight: bold; background: none;">Flyver</h3>
                             
                             <p style="color:white; padding:0 6%; background: none;">
                                 <!-- A dummy airline booking website created using node.js and express for backend,HTML, CSS and JavaScript for frontend and mongoDB for database management.                            -->
@@ -135,7 +155,7 @@
                     </div>
                     
 
-                    <div class="project-card" style="float: right;">
+                    <div class="project-card reveal reveal-right" style="float: right;">
                         <img src="images/dino.png" style="width: 100%; grid-area: 1/1/1/1; opacity: 0.2; " alt="">
                         <div class="project-card-content">
                             <h3 class="right-align" style="color:#01a2ff; padding: 6%; padding-top:14%; padding-bottom: 0;font-weight: bold; background: none;">Neuro Evolutionary Dino</h3>
@@ -153,7 +173,7 @@
                         
                     </div>
                     
-                    <div class="project-card" style="float: left;">
+                    <div class="project-card reveal reveal-left" style="float: left;">
                         <img src="images/tiles.png" style="width: 100%; grid-area: 1/1/1/1; opacity: 0.2; " alt="">
                         <div class="project-card-content" id="mcst-card">
                             <h3 style="color:#01a2ff; padding: 6%; padding-top:12%; padding-bottom: 0;font-weight: bold; background: none;">MCTS-Based 2048 Bot</h3>
@@ -172,7 +192,7 @@
                     </div>
 
                     <a href="https://github.com/pranav882655">
-                        <div class="project-card git-card" style="float: right;">
+                        <div class="project-card git-card reveal reveal-right" style="float: right;">
                             <img src="images/github.png" style="width: 100%; grid-area: 1/1/1/1; opacity: 0.2; " alt="">
                             <div class="project-card-content">
                                 <h3 style="margin-top: 23%; text-align:center; padding-bottom: 0;font-weight: bold; background: none;">View More Of My Work At Github</h3>
@@ -187,12 +207,22 @@
             </div>
         </section>
 
-        <section id="contact">
-            <div style="justify-content: center; text-align: center; height: fit-content;" class="experience-content blur-filter">
+        <section id="contact" class="reveal">
+            <div style="justify-content: center;margin: auto; text-align: center; height: fit-content;" class="experience-content blur-filter">
                 <h1 class="section-heading" style="border: none; text-align: center;">I Guess That's About It...</h1>
                 <h1 class="section-heading" style="border: none; text-align: center; font-size: 30px; padding-top: 0; color: white; ">Get In Touch</h1>
                 <p style="text-align: center; width: auto; margin: 0 10%;" class="about-me">Whether you want to hire me or discuss a project or maybe just say hi! I'm not a big social media fan but you can drop a mail or connect with me through linkedin :)</p>
-                <button class="btn btn-lg btn-outline-primary" style="margin-top: 5%;">Get In Touch</button>
+                <a href="mailto:srivatsavpranav@gmail.com">
+                    <div style="width: max-content; overflow: hidden; margin:auto; margin-top: 40px;">
+                        <button  class="button-glass reveal reveal-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Drop A Mail
+                        </button>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -200,9 +230,9 @@
 
     <footer style="min-height: 15vh;">
         <div class="sm-icons-footer">
-                <a href="#" class="fab fa-linkedin-in"></a>
-                <a href="#" class="fab fa-github"></a>
-                <a href="#" class="far fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/pranav-srivatsav-022383175/" class="fab fa-linkedin-in icon"></a>
+                <a href="https://github.com/pranav882655" class="fab fa-github icon"></a>
+                <a href="mailto:srivatsavpranav@gmail.com" class="far fa-envelope icon"></a>
         </div>
         <!-- <p style="background-color: transparent; text-align: center; color: #00fff2;">Built from scratch by me</p> -->
     </footer>
