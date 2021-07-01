@@ -82,6 +82,14 @@ $(document).ready(function () {
         );
     });
 
+    $('.menu-buttons').click(function(){
+        console.log("clicked");
+        var reveals = document.querySelectorAll('.reveal');
+        reveals.forEach(element => {
+            element.classList.add('active');
+        });
+    })
+
     
     
 
