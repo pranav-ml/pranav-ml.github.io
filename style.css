@@ -171,6 +171,8 @@ a{
   padding-top: 15px;
   padding-bottom: 0;
   background:#060749b0;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
   animation-name: logo-appear;
   animation-duration: 1s;
   

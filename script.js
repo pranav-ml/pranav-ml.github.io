@@ -58,12 +58,7 @@ $(document).ready(function () {
     // burger menu script 
 
     const btn = document.querySelector('.fancy-burger');
-    btn.addEventListener("click", function () {
-        
-    });
-
-
-
+    
     // menu toggle script
     
     $('.menu-bar').click(function () {
@@ -82,6 +77,9 @@ $(document).ready(function () {
         $('.navbar .menu').removeClass('active');
         $('.blur-filter').removeClass('active');
         $('body').removeClass('hide-overflow');
+        btn.querySelectorAll("span").forEach(
+            (span)=> span.classList.remove("open")
+        );
     });
 
     
