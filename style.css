@@ -86,7 +86,9 @@ body::-webkit-scrollbar-thumb {
 .navbar *{
   background: none;
 }
-
+body{
+  background-color: #060749;
+}
 main{
   padding: 0 15vw;
   overflow: hidden;
@@ -162,7 +164,7 @@ a{
 
 
 .navbar {
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
@@ -170,7 +172,7 @@ a{
   z-index: 5;
   padding-top: 15px;
   padding-bottom: 0;
-  background:#060749b0;
+  background:#060749;
   animation-delay: 1s;
   animation-fill-mode: backwards;
   animation-name: logo-appear;
@@ -375,7 +377,7 @@ nav {
   padding-top: 5%;
   justify-content: center;
   height: fit-content;
-  margin: auto;
+  margin-top: 5%;
   /* width: clamp(400px, 80vw, 800px); */
 }
 .text1 {
@@ -464,7 +466,7 @@ nav {
   left: 0;
   content: "";
   width: 100%;
-  background-color: #00fff241;
+  background-color: #00fff22c;
   height: 100%;
   transition:ease-in-out 0.2s;
 }
