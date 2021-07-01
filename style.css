@@ -34,15 +34,13 @@
   margin: auto; 
   width: 100px; 
   background: none;
+  height: fit-content;
 }
 .preloader p{
-  position: fixed;
+
   background: none;
   color: #00fff2;
-  top: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-  /* transform: translateY(200%); */
+  
 }
 
 .hide-preloader{
