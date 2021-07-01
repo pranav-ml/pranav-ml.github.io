@@ -1,3 +1,19 @@
+var preload = document.querySelector(".preloader");
+
+function hidePreloader() {
+    preload.classList.add("hide-preloader");
+    document.querySelector('html').classList.remove("hide-scroll");
+    
+}
+
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
+
 $(document).ready(function () {
 
     // animate landing page
@@ -8,7 +24,7 @@ $(document).ready(function () {
         var styles = {
             "animation-name": "menu-appear",
             "animation-duration": "0.5s",
-            "animation-delay": `${i*0.2}s`,
+            "animation-delay": `${1+i*0.2}s`,
             "animation-fill-mode":"backwards"
           }
 
@@ -17,18 +33,34 @@ $(document).ready(function () {
         
     }
 
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 5; i++) {
         var styles = {
             "animation-name": "text-appear",
             "animation-duration": "0.5s",
-            "animation-delay": `${0.8+i*0.2}s`,
+            "animation-delay": `${1+0.8+i*0.2}s`,
             "animation-fill-mode": "backwards"
         }
-        console.log(i);
 
         Object.assign(document.querySelector(`#intro div div:nth-of-type(${i})`).style, styles);
     }
 
+    var styles = {
+        "animation-name": "logo-appear",
+        "animation-duration": "0.5s",
+        "animation-delay": "3s",
+        "animation-fill-mode": "backwards"
+    }
+    Object.assign(document.querySelector(".sm-icons").style, styles);
+    Object.assign(document.querySelector(`#intro div div:nth-of-type(${5})`).style, styles);
+
+   
+
+    // burger menu script 
+
+    const btn = document.querySelector('.fancy-burger');
+    btn.addEventListener("click", function () {
+        
+    });
 
 
 
@@ -39,7 +71,21 @@ $(document).ready(function () {
         $('.navbar .menu').toggleClass('active');
         $('.blur-filter').toggleClass('active');
         $('body').toggleClass('hide-overflow');
-    })
+        btn.querySelectorAll("span").forEach(
+            (span)=> span.classList.toggle("open")
+        );
+
+        
+    });
+
+    $('main').click(function(){
+        $('.navbar .menu').removeClass('active');
+        $('.blur-filter').removeClass('active');
+        $('body').removeClass('hide-overflow');
+    });
+
+    
+    
 
     // experience tabs
 
