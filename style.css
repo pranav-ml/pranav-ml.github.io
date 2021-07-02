@@ -373,10 +373,10 @@ nav {
   /* padding:0 200px; */
 }
 .intro-content {
-  padding-top: 5%;
+  /* padding-top: 5%; */
   justify-content: center;
   height: fit-content;
-  margin-top: 5%;
+  margin-top: 4%;
   /* width: clamp(400px, 80vw, 800px); */
 }
 .text1 {
