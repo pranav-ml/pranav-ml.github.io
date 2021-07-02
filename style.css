@@ -390,6 +390,7 @@ nav {
 }
 .text2 {
   font-size: clamp(40px, 8vw, 80px);
+  min-height: 40px;
   font-weight: bold;
   background: none;
   color: #00fff2;
@@ -399,6 +400,7 @@ nav {
   font-size: clamp(40px, 8vw, 80px);
   /* font-weight: bold; */
   /* font-style: italic; */
+  min-height: 40px;
   background: none;
   color: #5c69a0;
   line-height: 1;
