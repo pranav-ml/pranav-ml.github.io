@@ -20,7 +20,7 @@ $(document).ready(function () {
     if (top<115) {
         document.querySelector('.navbar').style.position="sticky";
         document.querySelector('.intro-content').style.margin="1%";
-        document.querySelector('.intro-content').style.marginTop="10%";
+        document.querySelector('.intro-content').style.marginTop="2%";
     }
 
     // animate landing page
