@@ -65,7 +65,7 @@ $(document).ready(function () {
         // console.log("Hello world!");
         $('.navbar .menu').toggleClass('active');
         $('.blur-filter').toggleClass('active');
-        $('body').toggleClass('hide-overflow');
+        $('html').toggleClass('hide-overflow');
         btn.querySelectorAll("span").forEach(
             (span)=> span.classList.toggle("open")
         );
@@ -76,7 +76,7 @@ $(document).ready(function () {
     $('main').click(function(){
         $('.navbar .menu').removeClass('active');
         $('.blur-filter').removeClass('active');
-        $('body').removeClass('hide-overflow');
+        $('html').removeClass('hide-overflow');
         btn.querySelectorAll("span").forEach(
             (span)=> span.classList.remove("open")
         );
