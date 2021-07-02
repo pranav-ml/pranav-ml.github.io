@@ -16,6 +16,13 @@ function showPage() {
 
 $(document).ready(function () {
 
+    var top = $('.intro-content').offset().top;
+    if (top<115) {
+        document.querySelector('.navbar').style.position="sticky";
+        document.querySelector('.intro-content').style.margin="1%";
+        document.querySelector('.intro-content').style.marginTop="10%";
+    }
+
     // animate landing page
     
 
