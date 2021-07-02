@@ -615,6 +615,7 @@ p.about-me{
 
 a.fa-style{
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 .project-card:hover>.project-card-content{
