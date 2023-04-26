@@ -1,4 +1,4 @@
-document.body.style.zoom = '80%';
+// document.body.style.zoom = '80%';
 var preload = document.querySelector(".preloader");
 
 function hidePreloader() {
