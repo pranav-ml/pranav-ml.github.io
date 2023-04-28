@@ -553,8 +553,10 @@ p.about-me{
 
 #projects{
   display: flex;
-  min-height: 85vh;
-  margin: auto;
+  /* min-height: 85vh; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
   justify-content: center;
   /* margin-top: 10%; */
   width: 70%;
@@ -656,7 +658,7 @@ a.fa-style{
   margin: auto;
   justify-content: center;
   height: fit-content;
-  padding-bottom: 50px;
+  padding-bottom: 10%;
 }
 
 /* footer section */
