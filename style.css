@@ -642,7 +642,7 @@ a.fa-style{
   transition: ease-out 0.2s;
 }
 
-#link1:hover,#link2:hover,#link3:hover,#link4:hover{
+#link1:hover,#link2:hover,#link3:hover,#link4:hover,#link5:hover,#link6:hover{
   color: #01a2ff;
   transition: ease-in 0.2s;
 }
