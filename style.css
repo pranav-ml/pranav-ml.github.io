@@ -367,7 +367,7 @@ nav {
 #intro {
   display: inline-flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 125vh;
   margin: auto;
   justify-content: center;
   /* width: 1200px; */
@@ -436,7 +436,7 @@ nav {
 #about, #experience{
   display: flex;
   /* width: 100%; */
-  min-height: 85vh;
+  min-height: 125vh;
   margin: auto;
   width:70%;
   /* margin-top: 10%; */
@@ -652,7 +652,7 @@ a.fa-style{
 #contact{
   display: flex;
   width: 100%;
-  min-height: 85vh;
+  /* min-height: 125vh; */
   margin: auto;
   justify-content: center;
   height: fit-content;
@@ -673,6 +673,12 @@ footer{
   justify-content: center;
   margin-top: -1px;
 
+}
+
+.center-vertical{
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .sm-icons-footer{
