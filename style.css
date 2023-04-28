@@ -759,6 +759,10 @@ footer{
 
 @media (max-width: 840px) {
 
+  #intro, #about, #experience{
+    min-height: 100vh;
+  }
+
   /* navbar  */
 
   main{
