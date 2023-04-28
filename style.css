@@ -930,10 +930,10 @@ footer{
   .fa-style{
     bottom:5%;
   }
-  .project-card:hover>.project-card-content{
+  /* .project-card:hover>.project-card-content{
     background: rgb(0 232 255 / 15%);
     transition: ease-out 0.2s;
-  }
+  } */
 
   #mcst-card h1{
     padding-top: 8%;
