@@ -18,15 +18,16 @@ function showPage() {
 $(document).ready(function () {
 
     var nav_bottom = document.querySelector('.navbar').clientHeight;
-    console.log(nav_bottom);
+    // console.log(nav_bottom);
+
 
     var main_section_top = document.getElementById('main-section').getBoundingClientRect().top + window.pageYOffset;
-    console.log(main_section_top);
+    // console.log(main_section_top);
     // console.log(main_section_top);
 
     if (main_section_top<nav_bottom){
         document.getElementById('main-section').style.position = 'relative';
-        document.getElementById('main-section').style.top = nav_bottom+'px';
+        document.getElementById('main-section').style.top = (nav_bottom-document.getElementsByClassName('center-vertical')[0].getBoundingClientRect().top)+'px';
     }
     
     
