@@ -17,7 +17,21 @@ function showPage() {
 
 $(document).ready(function () {
 
+    var nav_bottom = $('nav').height();
+    console.log(nav_bottom);
+
+    var main_section_top = $('#main-section').offset().top;
+    // console.log(main_section_top);
+
+    if (main_section_top<nav_bottom){
+        document.getElementById('main-section').style.position = 'relative';
+        document.getElementById('main-section').style.top = (nav_bottom+10)+'px';
+    }
+    
+    
+
     var top = $('.intro-content').offset().top;
+
     if (top<115) {
         // document.querySelector('.navbar').style.position="sticky";
         document.querySelector('.intro-content').style.margin="1%";
