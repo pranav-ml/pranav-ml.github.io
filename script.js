@@ -17,15 +17,16 @@ function showPage() {
 
 $(document).ready(function () {
 
-    var nav_bottom = $('nav').height();
+    var nav_bottom = document.querySelector('.navbar').clientHeight;
     console.log(nav_bottom);
 
-    var main_section_top = $('#main-section').offset().top;
+    var main_section_top = document.getElementById('main-section').getBoundingClientRect().top + window.pageYOffset;
+    console.log(main_section_top);
     // console.log(main_section_top);
 
     if (main_section_top<nav_bottom){
         document.getElementById('main-section').style.position = 'relative';
-        document.getElementById('main-section').style.top = (nav_bottom+10)+'px';
+        document.getElementById('main-section').style.top = nav_bottom+'px';
     }
     
     
